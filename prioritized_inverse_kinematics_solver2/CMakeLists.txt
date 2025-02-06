@@ -7,14 +7,14 @@ set(CMAKE_BUILD_TYPE Release)
 find_package(catkin REQUIRED COMPONENTS
   ik_constraint2
   prioritized_qp_osqp
-  choreonoid_viewer
+  ## choreonoid_viewer
   )
 find_package(choreonoid REQUIRED)
 
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES prioritized_inverse_kinematics_solver2
-  CATKIN_DEPENDS ik_constraint2 prioritized_qp_osqp choreonoid_viewer
+  CATKIN_DEPENDS ik_constraint2 prioritized_qp_osqp ## choreonoid_viewer
 )
 
 ###########

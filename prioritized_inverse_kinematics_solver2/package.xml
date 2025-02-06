@@ -12,6 +12,7 @@
   <depend>ik_constraint2</depend>
   <depend>prioritized_qp_osqp</depend>
   <depend>choreonoid</depend>
+  <!-- // IRSL patch (not using viewer) //
   <depend>choreonoid_viewer</depend>
-
+  -->
 </package>

@@ -189,6 +189,7 @@ namespace prioritized_inverse_kinematics_solver2 {
       double time = timer.measure();
       std::cerr << "[PrioritizedIK] solveIKOnce time: " << time << "[s]. norm: " << result.norm() << std::endl;
     }
+#if 0 // IRSL patch (not using viewer)
     if(param.debugLevel>2 && param.viewer) {
       std::vector<cnoid::SgNodePtr> markers;
       for(int i=0;i<ikc_list.size();i++){
@@ -205,6 +206,7 @@ namespace prioritized_inverse_kinematics_solver2 {
         getchar();
       }
     }
+#endif
 
     return result.norm() < param.convergeThre;
   }
