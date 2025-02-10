@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ik_solvers2_python</name>
+  <version>0.0.0</version>
+  <description>ik_solvers (python binding for choreonoid)</description>
+
+  <maintainer email="kakiuchi.yohei.sw@tut.jp">Yohei Kakiuchi</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>ik_constraint2</depend>
+  <depend>prioritized_inverse_kinematics_solver2</depend>
+
+</package>
